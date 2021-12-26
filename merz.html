@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Merz</title>
+    <link rel="stylesheet" href="Merz.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <div class="merzaad">
+        <h2>MERZAAD</h2>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="./merz.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="movingtext">
+        <marquee behavior="scroll" direction="left">
+            BTC/USD: Giving the trend and support from 2020 the benefit of the doubt, a test
+            of the 40k area could bring a bottom that helps send Bitcoin back to the
+            upside. Ideally, we see some type of capitulation price action occur as the
+            test unfolds, demonstrating a wash-out type low that can help clear the way 
+            for the upside.
+        </marquee>
+    </div>
+
+
+
+
+    <div class="blog">
+        <div class="block">
+            <div class="post">
+                <h1 id="title">Forex vs Crypto</h1>
+                <p id="txt">
+                    If you are interested in trading, you should know the basic similarities and differences
+                    between the conventional forex market and the crypto market. We can put the forex market
+                    under the traditional section and the crypto market under the contemporary one due to its
+                    reliance on internet-based facilities and devices. Today, both forex and crypto markets 
+                    offer high-risk-high-reward investment options. However, in comparison, crypto trading
+                    has some prominent advantages that are largely accompanied by easily observable trading
+                    volume, low barriers to entry, and easily accessible exchanges, among others.
+                    <div id="eurusd">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "FX:EURUSD",
+  "width": "100%",
+  "height": "100%",
+  "locale": "en",
+  "dateRange": "12M",
+  "colorTheme": "light",
+  "trendLineColor": "rgba(0, 255, 0, 1)",
+  "underLineColor": "rgba(182, 182, 182, 0.19)",
+  "underLineBottomColor": "rgba(41, 98, 255, 0)",
+  "isTransparent": false,
+  "autosize": true,
+  "largeChartUrl": ""
+}
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                    <div id="xauusd">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "FOREXCOM:XAUUSD",
+  "width": "100%",
+  "height": "100%",
+  "locale": "en",
+  "dateRange": "12M",
+  "colorTheme": "light",
+  "trendLineColor": "rgba(0, 255, 0, 1)",
+  "underLineColor": "rgba(182, 182, 182, 0.19)",
+  "underLineBottomColor": "rgba(41, 98, 255, 0)",
+  "isTransparent": false,
+  "autosize": true,
+  "largeChartUrl": ""
+}
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                    <div id="btc">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "BINANCE:BTCUSD",
+  "width": "100%",
+  "height": "100%",
+  "locale": "en",
+  "dateRange": "12M",
+  "colorTheme": "light",
+  "trendLineColor": "rgba(0, 255, 0, 1)",
+  "underLineColor": "rgba(182, 182, 182, 0.19)",
+  "underLineBottomColor": "rgba(41, 98, 255, 0)",
+  "isTransparent": false,
+  "autosize": true,
+  "largeChartUrl": ""
+}
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                    <div id="eth">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+  {
+  "symbol": "COINBASE:ETHUSD",
+  "width": "100%",
+  "height": "100%",
+  "locale": "en",
+  "dateRange": "12M",
+  "colorTheme": "light",
+  "trendLineColor": "rgba(0, 255, 0, 1)",
+  "underLineColor": "rgba(182, 182, 182, 0.19)",
+  "underLineBottomColor": "rgba(41, 98, 255, 0)",
+  "isTransparent": false,
+  "autosize": true,
+  "largeChartUrl": ""
+}
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+</div>
+        <div class="butt">
+            <button onclick="bitcoin()" type="button">BTC/USD</button>
+            <button onclick="etherium()" type="button">ETH/USD</button>
+            <button onclick="xauusd()" type="button">XAU/USD</button>
+            <button onclick="eurusd()" type="button">EUR/USD</button>
+        </div>
+    </div>
+
+    <!---
+             <div class="top">
+                <p id="emojy">
+                    This is my first javascript
+                </p>
+                <div>
+                    <button onclick="enter()" type="button">ENTER</button>
+                    <button onclick="exit()" type="button">EXIT</button>
+                </div>
+            </div>
+    --->
+    <script src="./merz.js"></script>
+</body>
+        </html>
