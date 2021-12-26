@@ -1,4 +1,4 @@
-
+    
 * {
     box-sizing: border-box;
     font-family: "Audiowide", sans-serif;
@@ -68,12 +68,16 @@ li {
     background-color: white;
     float: left;
     width: 72%;
-    margin-left:20px
+    margin-left: 20px;
     
+}
+.blog {
+    margin-bottom: 20px;
 }
 .post {
     padding: 20px;
     margin-top: 20px;
+
 
 }
     .post p {
@@ -89,11 +93,11 @@ li {
     padding-left: 20px;
 }
 .card {
-    padding: 10px;
-    text-align: center
+    margin-bottom: 20px;
+    text-align: center;
 }
 #poster{
-   
+   padding:20px;
    width:100%
 }
 
@@ -116,7 +120,8 @@ li {
     .left, .right {
         width: 100%;
         padding: 0;
-        margin:auto;
+        margin: auto;
+        margin-top: 20px;
     }
 }
 
