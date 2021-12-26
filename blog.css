@@ -63,6 +63,7 @@ li {
 }
 
 
+
 .left {
     background-color: white;
     float: left;
@@ -89,16 +90,17 @@ li {
 }
 
 
-.row:after {
+.blog:after {
     content: "";
     display: table;
     clear: both;
 }
 
 .footer {
+    margin:20px;
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: white;
     margin-top: 20px;
 }
 

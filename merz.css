@@ -85,7 +85,9 @@ button {
     border-radius: 10px
 }
 
-
+.row{
+    margin:20px
+}
 
 .blog {
     background-color: whitesmoke;
@@ -136,4 +138,16 @@ button {
     padding: 20px;
     position: center
 }
-
+.footer {
+    margin:20px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+    .left, .right {
+        width: 100%;
+        padding: 0;
+    }
+}
