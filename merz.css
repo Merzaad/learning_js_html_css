@@ -89,14 +89,12 @@ button {
 
 .blog {
     background-color: whitesmoke;
- 
     margin: 20px;
     padding: 30px;
     margin-top: 20px;
     color: white;
 }
 .block {
-    display: table;
     margin: 20px
 }
 .post {

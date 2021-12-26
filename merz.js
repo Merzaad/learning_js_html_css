@@ -16,7 +16,7 @@ function bitcoin() {
     document.getElementById("btc").style.display = 'block'
     document.getElementById("eth").style.display = 'none'
     document.getElementById("eurusd").style.display = 'none'
-    document.getElementById("xauusd").style.display = 'none'
+    document.querySelector("xauusd").style.display = 'none'
 }
 function eurusd() {
     document.getElementById("txt").innerHTML = c
