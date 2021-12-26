@@ -67,13 +67,21 @@ li {
 .left {
     background-color: white;
     float: left;
-    width: 75%;
+    width: 72%;
+    margin-left:20px
+    
 }
 .post {
     padding: 20px;
     margin-top: 20px;
-}
 
+}
+    .post p {
+        font-family: Calibri;
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: black
+    }
 
 .right {
     float: left;
@@ -104,10 +112,11 @@ li {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .left, .right {
         width: 100%;
         padding: 0;
+        margin:auto;
     }
 }
 
