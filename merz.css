@@ -150,12 +150,17 @@ button {
     }
 
 .footer {
-    margin:20px;
+    margin: 20px;
     padding: 20px;
     text-align: center;
     background: white;
     margin-top: 20px;
 }
+
+    .footer a {
+        text-decoration: none;
+        color: black
+    }
 
 @media screen and (max-width: 800px) {
     .left, .right {

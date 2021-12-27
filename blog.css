@@ -119,6 +119,10 @@ li {
     background: white;
     margin-top: 20px;
 }
+.footer a{
+    text-decoration:none;
+    color:black
+}
 
 @media screen and (max-width: 1000px) {
     .left, .right {
