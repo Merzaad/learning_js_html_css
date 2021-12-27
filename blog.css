@@ -18,7 +18,15 @@ body {
     font-size: 25px;
     border-radius: 10px
 }
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 ul {
+   
     border-radius: 10px;
     list-style-type: none;
     margin: 20px;
@@ -28,10 +36,12 @@ ul {
 }
 
 li {
+    
     float: left;
 }
 
     li a {
+       
         display: block;
         background-color: dimgray;
         color: ghostwhite;
@@ -47,7 +57,6 @@ li {
         }
 
 .active {
-    display: block;
     background-color: mediumspringgreen;
     color: dimgray;
     text-align: center;
@@ -102,6 +111,7 @@ li {
     text-align: center;
 }
 #poster{
+   display:block;
    padding:20px;
    width:100%
 }
