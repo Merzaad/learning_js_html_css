@@ -63,6 +63,7 @@ li {
 }
 
 .blog {
+    border-radius: 10px;
     margin: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -113,13 +114,15 @@ li {
 }
 
 .footer {
-    margin:20px;
+    border-radius: 10px;
+    margin: 20px;
     padding: 20px;
     text-align: center;
     background: white;
     margin-top: 20px;
 }
 .footer a{
+
     text-decoration:none;
     color:black
 }
