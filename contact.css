@@ -151,4 +151,22 @@ input[type=submit] {
         width: 100%;
         padding: 0;
     }
+    li a {
+        font-size: 10px
+    }
+
+    .movingtext {
+        font-size: 10px
+    }
+
+    .contact {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block {
+        margin: 0;
+    }
+
+
 }

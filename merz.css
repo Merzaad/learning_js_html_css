@@ -173,8 +173,20 @@ button {
     }
 
 @media screen and (max-width: 800px) {
-    .left, .right {
-        width: 100%;
+    li a {
+        font-size: 10px
+    }
+    .movingtext {
+        font-size: 10px
+    }
+    .blog {
+        margin:0;
         padding: 0;
+    }
+    .block{
+        margin:0;
+    }
+    .post p {
+        font-size: 15px
     }
 }

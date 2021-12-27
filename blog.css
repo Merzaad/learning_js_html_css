@@ -110,10 +110,14 @@ li {
     margin-bottom: 20px;
     text-align: center;
 }
-#poster{
-   display:block;
-   padding:20px;
-   width:100%
+.tradingview-widget-container{
+    margin:auto
+}
+
+#poster {
+    display: block;
+    padding: 20px;
+    width: 100%
 }
 
 
@@ -137,12 +141,38 @@ li {
     color:black
 }
 
-@media screen and (max-width: 1000px) {
-    .left, .right {
+@media screen and (max-width: 1100px) {
+
+    .tradingview-widget-container {
+        display: none
+    }
+    .right,.left {
         width: 100%;
         padding: 0;
-        margin: auto;
+        margin:0;
         margin-top: 20px;
+
     }
+    li a {
+        font-size: 10px
+    }
+
+    .movingtext {
+        font-size: 10px
+    }
+
+    .blog {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block {
+        margin: 0;
+    }
+
+    .post p {
+        font-size: 15px
+    }
+
 }
 
