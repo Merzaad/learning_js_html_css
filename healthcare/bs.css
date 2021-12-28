@@ -13,7 +13,49 @@ body{
 }
 
 .crdimg {
-    width:100%;
+   width:100%;
    margin-bottom:20px
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+        li a:hover {
+            background-color: mediumvioletred;
+            color: white;
+        }
+
+.active {
+    background-color: mediumvioletred;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.test {
+    background-color: black;
+    margin: 70px;
+    padding:1px;
+    border-radius: 10px;
+    background: rgb(255,195,238);
+    background: linear-gradient(90deg, rgba(255,195,238,0.12958686892725846) 0%, rgba(141,141,141,0.7458333675266982) 52%, rgba(255,120,225,0.12958686892725846) 100%);
+}
