@@ -1,15 +1,14 @@
-body{
-    background-image:url("./bg4.jpg");
+body {
+    background-image: url("../img/bg4.jpg");
     background-repeat: repeat;
-    background-size:700px;
-
+    background-size: 700px;
 }
 
 .header {
     color: mediumvioletred;
     font-family: "Sofia";
     font-size: 65px;
-    text-shadow: 0px 0px 15px mediumvioletred
+    text-shadow: 0px 0px 20px mediumvioletred
 }
 
 .crdimg {
@@ -59,3 +58,19 @@ li {
     background: rgb(255,195,238);
     background: linear-gradient(90deg, rgba(255,195,238,0.12958686892725846) 0%, rgba(141,141,141,0.7458333675266982) 52%, rgba(255,120,225,0.12958686892725846) 100%);
 }
+
+.footer {
+
+    width:100%;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+
+}
+
+    .footer a {
+        text-decoration: none;
+        color: mediumvioletred;
+        
+    }
