@@ -3,7 +3,6 @@ body {
     background-repeat: repeat;
     background-size: 700px;
 }
-
 .header {
     color: mediumvioletred;
     font-family: "Sofia";
@@ -67,7 +66,6 @@ body {
     }
 
 .footer {
-
     width:100%;
     padding: 40px;
     text-align: center;
