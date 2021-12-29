@@ -16,18 +16,18 @@ body {
    margin-bottom:20px
 }
 
-ul {
+.nav {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
     background-color: white;
 }
 
-li {
+.nav li {
     float: left;
 }
 
-    li a {
+    .nav li a {
         display: block;
         background-color: white;
         color: black;
@@ -37,12 +37,12 @@ li {
         text-transform: uppercase;
     }
 
-        li a:hover {
+        .nav li a:hover {
             background-color: mediumvioletred;
             color: white;
         }
 
-.active {
+.nav .active {
     background-color: mediumvioletred;
     color: white;
     text-align: center;
