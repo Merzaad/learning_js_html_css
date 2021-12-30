@@ -1,2 +1,9 @@
-let a = "hi m , you have to finish the js"
-console.log(a)
+function purchase() {
+    let a = "Purchased";
+   
+    document.getElementById("purch").innerHTML = a;
+    let b = document.querySelectorAll('#badge')
+    b.forEach(function (value) {
+        value.style.display='none'
+    })
+}
