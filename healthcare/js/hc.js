@@ -8,5 +8,5 @@ function purchase() {
     });
     document.querySelector('#crd').classList.add('border-success')
     document.querySelector('#crd').classList.add('text-success')
-    document.querySelector('#crdh').classList.replace('text-secondary','text-success')
+    document.querySelector('#crdh').classList.replace('text-secondary', 'text-success')
 }
