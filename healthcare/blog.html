@@ -15,8 +15,8 @@
     </div>
     <div class="container-fluid p-0 mb-5">
         <ul class="nav">
-            <li><a  href="./hc.html">Home</a></li>
-            <li><a  class="active" href="./blog.html">Blog</a></li>
+            <li><a href="./hc.html">Home</a></li>
+            <li><a class="active" href="./blog.html">Blog</a></li>
         </ul>
     </div>
     <div class="test">
@@ -26,7 +26,7 @@
                     <div class="sticky-top">
                         <div class="list-group">
                             <h5 class=" bg-dark text-white text-center p-2">Top Stories</h5>
-                            <a href="#" class="list-group-item list-group-item-action">
+                            <a href="#" class="list-group-item list-group-item-action ">
                                 <h1 style="font-size:medium"> Value Of Diagnostics</h1>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
@@ -35,18 +35,32 @@
                             <a href="#" class="list-group-item list-group-item-action">
                                 <h1 style="font-size:medium">Learning And Education</h1>
                             </a>
+
                             <a href="#" class="list-group-item list-group-item-action">
                                 <h1 style="font-size:medium"> Value Of Diagnostics</h1>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action">
                                 <h1 style="font-size:medium"> Future Of Diagnostics</h1>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                                <h1 style="font-size:medium">Learning And Education</h1>
                             </a>
                         </div>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-dark dropdown-toggle text-white" data-bs-toggle="dropdown" style="width:100%">More</button>
+                            <ul class="dropdown-menu"style="width:100%" >
+                                <li>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h1 style="font-size:medium"> Future Of Diagnostics</h1>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h1 style="font-size:medium"> Future Of Diagnostics</h1>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <h1 style="font-size:medium"> Future Of Diagnostics</h1>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    </div>
+                </div>
                 <div class="col-sm-6 bg-white p-5">
                     <div class="post">
                         <img class="crdimg" src="./img/img4.jpg">
@@ -79,9 +93,9 @@
                         <p class="text-secondary">Published November 29, 2021<span class="badge bg-secondary mx-2"><a class="lnk" href="#">Diseases & Conditions</a></span></p>
                         <p class="mb-5">
                             Psoriasis is a chronic skin disease characterized by rough, inflamed patches.
-                            There are a number of treatment options available, including a medication 
-                            called Skyrizi that is given as an injection. Does an upbeat, frequently-run 
-                            ad on TV clearly deliver all the information people need to know about this drug 
+                            There are a number of treatment options available, including a medication
+                            called Skyrizi that is given as an injection. Does an upbeat, frequently-run
+                            ad on TV clearly deliver all the information people need to know about this drug
                             –– or just some of it?
                         </p>
                         <hr class="mb-5 bg-secondary">
@@ -126,20 +140,20 @@
                             </div>
                         </div>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-3 bg-white">
 
                 </div>
-                <div class="col-sm-6 bg-white " >
-                        <ul class="pagination justify-content-center" >
-                            <li class="page-item"><a href="#" class="page-link"><<</a></li>
-                            <li class="page-item"><a href="#" class="page-link">1</a></li>
-                            <li class="page-item"><a href="#" class="page-link">2</a></li>
-                            <li class="page-item"><a href="#" class="page-link">3</a></li>
-                            <li class="page-item"><a href="#" class="page-link">>></a></li>
-                        </ul>
+                <div class="col-sm-6 bg-white ">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a href="#" class="page-link"><<</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">>></a></li>
+                    </ul>
                 </div>
                 <div class="col-sm-3 bg-white ">
 
@@ -148,7 +162,24 @@
         </div>
     </div>
     <div class="footer">
-        <h2><a href="#">Footer</a></h2>
+        <form id="nl">
+            <p class="h5 m-2 text-start">WEEKLY NEWSLETTER</p>
+            <div class="row text-start">
+                <div class="col-sm-2 mb-2">
+                    <input id="name" type="text" class="form-control" placeholder="First name" aria-describedby="frmnm">
+                    <div id="frmnm" class="form-text mx-2">Enter your name</div>
+                </div>
+                <div class="col-sm-2 mb-2">
+                    <input id="email" type="email" class="form-control" placeholder="Email" aria-describedby="frmnm">
+                    <div id="frmnm" class="form-text mx-2 ">Enter your email</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 ">
+                    <button type="submit" onclick="newsletter()" value="Submit" class="btn bg-success text-white" style="width:100%">Subscribe</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>

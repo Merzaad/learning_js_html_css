@@ -134,26 +134,25 @@
 
     </div>
     <div class="footer">
-        <form>
+        <form id="nl">
             <p class="h5 m-2 text-start">WEEKLY NEWSLETTER</p>
             <div class="row text-start">
                 <div class="col-sm-2 mb-2">
-                    <input type="text" class="form-control" placeholder="First name" aria-describedby="frmnm">
+                    <input id="name" type="text" class="form-control" placeholder="First name" aria-describedby="frmnm">
                     <div id="frmnm" class="form-text mx-2">Enter your name</div>
                 </div>
                 <div class="col-sm-2 mb-2">
-                    <input type="email" class="form-control" placeholder="Email" aria-describedby="frmnm">
+                    <input id="email" type="email" class="form-control" placeholder="Email" aria-describedby="frmnm">
                     <div id="frmnm" class="form-text mx-2 ">Enter your email</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 ">
-                    <button type="submit" class="btn bg-success text-white" style="width:100%">Subscribe</button>
+                    <button type="submit" onclick="newsletter()" value="Submit" class="btn bg-success text-white" style="width:100%">Subscribe</button>
                 </div>
             </div>
         </form>
     </div>
-    
 <script src="./js/hc.js"></script>
 </body>
 </html>
