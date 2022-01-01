@@ -11,7 +11,6 @@ function purchase() {
     document.querySelector('#crdh').classList.replace('text-secondary', 'text-success')
     
 }
-
 function newsletter(){
     const form = document.getElementById('nl');
     const name = form.element["name"];
@@ -19,7 +18,6 @@ function newsletter(){
     let fullName = name.value
     alert(fullName)
 }
-
 function validateForm() {
     let x = document.forms["myForm"]["fname"].value;
     if (x == "") {
