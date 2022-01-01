@@ -1,13 +1,12 @@
 body {
-    background-image: url("../img/bg4.jpg");
+
     background-repeat: repeat;
     background-size: 700px;
 }
 .header {
-    color: mediumvioletred;
+    color: lightseagreen;
     font-family: "Sofia";
     font-size: 65px;
-    text-shadow: 0px 0px 20px mediumvioletred
 }
 
 .crdimg {
@@ -37,17 +36,17 @@ body {
     }
 
         .nav li a:hover {
-            background-color: mediumvioletred;
+            background-color: lightseagreen;
             color: white;
         }
 
-.nav .active {
-    background-color: mediumvioletred;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
+    .nav .active {
+        background-color: lightseagreen;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
 
 .test {
     width:90%;
