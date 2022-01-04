@@ -1,7 +1,7 @@
 
 # html_css
 
-<a href="https://github.com/Merzaad/learning_js_html_css_bootstrap/tree/main/merz"><img src="https://i.postimg.cc/Px357hFJ/merz.jpg"></a>
+<a href="https://github.com/Merzaad/learning_js_html_css_bootstrap/tree/main/merz"><img src="https://i.postimg.cc/NGzVd7Xt/merz.jpg"></a>
 
 
 
