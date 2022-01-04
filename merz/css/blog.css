@@ -4,44 +4,35 @@
     font-family: "Audiowide", sans-serif;
 }
 body {
-    background-image: url("bg6.jpg");
+    background-color: gray;
+    background-image: url("../img/bg6.jpg");
     background-repeat: repeat;
     background-size: 800px;
-    padding:20px
+    padding: 30px;
 }
-.merzaad {
-    margin: 20px;
+
+.header {
     text-align: center;
-    padding: 0px;
     color: mediumspringgreen;
     text-shadow: 0px 0px 6px mediumspringgreen;
     font-size: 25px;
-    border-radius: 10px
 }
 
 .navbar {
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
 }
 
-ul {
-   
+.nav {
+    display: flex;
     border-radius: 10px;
     list-style-type: none;
-    margin: 20px;
     padding: 0;
     overflow: hidden;
     background-color: dimgray;
 }
 
-li {
-    
-    float: left;
-}
-
-    li a {
-       
+    .nav li a {
         display: block;
         background-color: dimgray;
         color: ghostwhite;
@@ -51,18 +42,20 @@ li {
         text-transform: uppercase;
     }
 
-        li a:hover {
+        .nav li a:hover {
             background-color: mediumspringgreen;
             color: dimgray;
         }
 
-.active {
+#active {
+    display: Block;
     background-color: mediumspringgreen;
     color: dimgray;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 .movingtext {
     text-shadow: 0px 0px 7px mediumspringgreen;
     color: mediumspringgreen;
@@ -72,12 +65,11 @@ li {
 }
 
 .blog {
-    border-radius: 10px;
-    margin: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
     background: rgb(219,255,195);
     background: linear-gradient(90deg, rgba(219,255,195,0.3144608185070903) 0%, rgba(141,141,141,0.7458333675266982) 52%, rgba(0,212,255,0.26684177088804273) 100%);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px
 }
 
 .left {
@@ -129,19 +121,30 @@ li {
 
 .footer {
     border-radius: 10px;
-    margin: 20px;
     padding: 20px;
     text-align: center;
     background: white;
     margin-top: 20px;
 }
-.footer a{
 
-    text-decoration:none;
-    color:black
-}
+    .footer a {
+        text-decoration: none;
+        color: black
+    }
+
 
 @media screen and (max-width: 1100px) {
+    body {
+        padding: 0px;
+    }
+
+    .movingtext {
+        font-size: 12px
+    }
+
+    .blog {
+        padding: 0px;
+    }
 
     .tradingview-widget-container {
         display: none
@@ -152,26 +155,6 @@ li {
         margin:0;
         margin-top: 20px;
 
-    }
-    li a {
-        font-size: 10px
-    }
-
-    .movingtext {
-        font-size: 10px
-    }
-
-    .blog {
-        margin: 0;
-        padding: 0;
-    }
-
-    .block {
-        margin: 0;
-    }
-
-    .post p {
-        font-size: 15px
     }
 
 }
