@@ -62,7 +62,7 @@ body {
     letter-spacing: 5px;
 }
 
-.contact {
+.border {
     background: rgb(219,255,195);
     background: linear-gradient(90deg, rgba(219,255,195,0.3144608185070903) 0%, rgba(141,141,141,0.7458333675266982) 52%, rgba(0,212,255,0.26684177088804273) 100%);
     padding: 20px;
@@ -78,14 +78,10 @@ body {
 
 .form {
     width: 50%;
-    margin: auto;
-    color: black;
+    margin:auto;
 }
-.label {
-    padding-bottom:10px;
-    
-}
-input[type=text]{
+
+input {
     width: 100%;
     padding:20px;
     margin: auto;
@@ -95,7 +91,7 @@ input[type=text]{
     font-family:Calibri;
 }
 
-input[type=submit] {
+button {
     width: 100%;
     color: dimgray;
     padding: 20px;
@@ -110,6 +106,7 @@ input[type=submit] {
         background-color: mediumspringgreen;
         color: black;
     }
+
 
 .footer {
     border-radius: 10px;
@@ -138,7 +135,7 @@ input[type=submit] {
     .movingtext {
         font-size: 12px
     }
-    .contact {
+    .border {
         padding: 0px;
     }
 }

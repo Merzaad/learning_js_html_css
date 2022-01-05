@@ -1,5 +1,6 @@
 * {
-    font-family: "Audiowide", sans-serif;  
+    font-family: "Audiowide", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -62,7 +63,7 @@ body {
     letter-spacing: 5px;
 }
 
-.blog {
+.border {
     background: rgb(219,255,195);
     background: linear-gradient(90deg, rgba(219,255,195,0.3144608185070903) 0%, rgba(141,141,141,0.7458333675266982) 52%, rgba(0,212,255,0.26684177088804273) 100%);
     padding: 20px;
@@ -70,15 +71,13 @@ body {
     border-radius:10px
 }
 
-.block {
+.main {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
 }
 
 .post {
-    float: left;
-    width: auto;
     padding: 5px;
 }
 
@@ -86,40 +85,22 @@ body {
     font-family:Calibri;
     letter-spacing:1px;
     font-size:20px;
-    color:black
-}
-
-.post h1 {
-
-    color: black
 }
 
 #eurusd {
     display: none;
-    width: auto;
-    padding: 20px;
-    position:center
 }
 
 #xauusd {
     display: none;
-    width: auto;
-    padding: 20px;
-    position: center
 }
 
 #btc {
     display: none;
-    width: auto;
-    padding: 20px;
-    position: center
 }
 
 #eth {
     display: none;
-    width: auto;
-    padding: 20px;
-    position: center
 }
 .butt {
     text-align: center;
@@ -142,7 +123,6 @@ button {
 
 .footer {
     border-radius: 10px;
-    
     padding: 20px;
     text-align: center;
     background: white;
@@ -168,7 +148,7 @@ button {
         font-size: 12px
 
     }
-    .blog {
+    .border {
         padding:0px;
     }
 
