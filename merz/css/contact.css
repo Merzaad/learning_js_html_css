@@ -24,7 +24,7 @@ body {
 }
 
 .nav {
-    display: flex;
+    display:flex;
     border-radius: 10px;
     list-style-type: none;
     padding: 0;
@@ -32,20 +32,20 @@ body {
     background-color: dimgray;
 }
 
-    .nav li a {
-        display: block;
-        background-color: dimgray;
-        color: ghostwhite;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
+.nav li a {
+    display: block;
+    background-color:dimgray;
+    color: ghostwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
-        .nav li a:hover {
-            background-color: mediumspringgreen;
-            color: dimgray;
-        }
+           .nav li a:hover {
+                background-color: mediumspringgreen;
+                color: dimgray;
+            }
 
 #active {
     display: Block;
@@ -55,7 +55,6 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .movingtext {
     text-shadow: 0px 0px 7px mediumspringgreen;
     color: mediumspringgreen;
@@ -78,10 +77,13 @@ body {
 }
 
 .form {
-
     width: 50%;
     margin: auto;
     color: black;
+}
+.label {
+    padding-bottom:10px;
+    
 }
 input[type=text]{
     width: 100%;
@@ -104,9 +106,6 @@ input[type=submit] {
     display: block
 }
 
-
-
-
     button:hover {
         background-color: mediumspringgreen;
         color: black;
@@ -125,7 +124,7 @@ input[type=submit] {
         color: black
     }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 420px) {
     .form {
         width: 100%;
         padding: 0;
@@ -133,14 +132,13 @@ input[type=submit] {
     body {
         padding: 0px;
     }
-
+    .nav{
+        display:block;
+    }
     .movingtext {
         font-size: 12px
     }
-
     .contact {
         padding: 0px;
     }
-
-
 }

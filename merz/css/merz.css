@@ -23,10 +23,9 @@ body {
 }
 
 .nav {
-    display: flex;
+    display:flex;
     border-radius: 10px;
     list-style-type: none;
-   
     padding: 0;
     overflow: hidden;
     background-color: dimgray;
@@ -156,10 +155,15 @@ button {
     }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 420px) {
     body{
         padding:0px;
     }
+
+    .nav {
+        display:block;
+    }
+
     .movingtext {
         font-size: 12px
 

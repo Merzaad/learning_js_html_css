@@ -133,7 +133,7 @@ body {
     }
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 800px) {
     body {
         padding: 0px;
     }
@@ -141,11 +141,9 @@ body {
     .movingtext {
         font-size: 12px
     }
-
     .blog {
         padding: 0px;
     }
-
     .tradingview-widget-container {
         display: none
     }
@@ -154,8 +152,12 @@ body {
         padding: 0;
         margin:0;
         margin-top: 20px;
-
     }
 
 }
 
+@media screen and ( max-width:420px) {
+    .nav {
+        display: block;
+    }
+}
