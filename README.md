@@ -10,5 +10,5 @@
 
 
 
-# react
+# sidebar_react
 <a href="https://github.com/Merzaad/learning_django_react/tree/main/react/news"><img src="https://i.postimg.cc/15tPXYjT/news.jpg"></a>
