@@ -13,4 +13,4 @@
 
 # html_css_bootstrap_react
 
-<a href="https://github.com/Merzaad/learning_django_react/tree/main/react/news"><img src="https://i.postimg.cc/15tPXYjT/news.jpg"></a>
+<a href="https://github.com/Merzaad/learning_django_react/tree/main/react/news"><img src="https://i.postimg.cc/D0ypVqG5/Web-capture-8-1-2022-7341-localhost.jpg"></a>
