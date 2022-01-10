@@ -7,17 +7,20 @@
     border-radius:10px;
 }
 
-.su-img{
-    width:40%;
-    height:500px;
-    background-color:aqua;
+.su-img {
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: aqua;
 }
 .su-form {
     width: 60%;
     background-color: aquamarine;
-    display:flex;
+    display: flex;
+    border-radius: 10px;
 }
     .su-form form {
+        padding:5px;
         margin: auto;
         display: flex;
         flex-wrap:wrap;
@@ -45,8 +48,26 @@
             background-color:crimson;
         }
 
+@media screen and (max-width:900px){
+    .sign-up {
+       flex-direction:column;
+       width:80%;
+    }
+    .su-img {
+        width:100%
+    }
+    .su-form {
+        width:100%
+    }
+}
 
-
+@media screen and (max-width:420px) {
+    .sign-up {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+    }
+}
 
 
 
