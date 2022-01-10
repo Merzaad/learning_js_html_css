@@ -1,0 +1,52 @@
+.sign-up {
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    width:60%;
+    margin:auto;
+    margin-top:40px;
+    border-radius:10px;
+}
+
+.su-img{
+    width:40%;
+    height:500px;
+    background-color:aqua;
+}
+.su-form {
+    width: 60%;
+    background-color: aquamarine;
+    display:flex;
+}
+    .su-form form {
+        margin: auto;
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .su-form input {
+        display:block;
+        width:100%;
+        padding:10px;
+        border:none;
+        border-radius:10px;
+        margin:2px;
+    }
+    .su-form button {
+        width:100%;
+        border:none;
+        border-radius:10px;
+        margin:auto;
+        margin-top:5px;
+        padding:10px;
+        transition:1s
+    }
+        .su-form button:hover {
+            color: black;
+            background-color:crimson;
+        }
+
+
+
+
+
+
