@@ -7,9 +7,24 @@
     <link href='https://css.gg/chevron-up-r.css' rel='stylesheet'>
     <link href='https://css.gg/push-chevron-left-r.css' rel='stylesheet'>
     <link href='https://css.gg/push-chevron-right-r.css' rel='stylesheet'>
+    <style>
+        #social2 {
+            display:none;
+        }
+        @media screen and (max-width:720px) {
+            #social {
+                display: none
+            }
+            #social2 {
+                display: inherit;
+            }
+ 
+        }
+
+    </style>
 </head>
 <body class="text-end" style="font-family:Vazir"  >
-    <div class="container ">
+    <div class="container">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light border rounded my-5">
                 <div class="container-fluid d-flex ">
@@ -43,7 +58,7 @@
             </nav>
         </div>
         <div class="container">
-            <div class="container rounded border position-relative" style="background-image: url(./img1.jpg); height: 500px; ">
+            <div  class="container rounded border position-relative" style="background-image: url(./img1.jpg); height:550px ">
                 <div class="container w-75 me-5 text-white position-absolute bottom-0 end-0 ">
                     <span class="h6"> آبان ۱۴۰۰</span><span class="mx-5 h6">خواندن در ۶ دقیقه</span>
                     <h1>زیباترین هتل‌ها برای اقامت در فصل پاییز</h1>
@@ -90,7 +105,7 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div id="social" class="col-lg-4">
                     <div class="container pt-5 m-0" style="background-image:url(./img4.png);background-repeat:no-repeat; height:505px;width:350px;">
                         <h2>جستجو</h2>
                         <form class="d-flex shadow my-5">
@@ -259,6 +274,28 @@
             </div>
         </div>
         <div class="container">
+            <div id="social2" class="col-lg-4 my-5">
+                <div class="container pt-5 m-0" style="background-image:url(./img4.png);background-repeat:no-repeat; height:505px;width:100%;">
+                    <h2>جستجو</h2>
+                    <form class="d-flex shadow my-5">
+                        <button class="btn bg-primary">Go</button>
+                        <input class="form-control" placeholder="دنبال چه چیزی هستید؟">
+                    </form>
+                    <h2>مارا دنبال کنید</h2>
+                    <div class="wid">
+                        <div class="container rounded bg-white py-4 my-3">
+
+                        </div>
+                        <div class="container rounded bg-white py-4 my-3">
+
+                        </div>
+                        <div class="container rounded bg-white py-4 my-3">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class="row rounded bg-dark text-white m-0  ">
                 <div class="col-lg-4 p-5 position-relative ">
                     <div class=" mt-4 ms-5 text-start">
@@ -270,8 +307,9 @@
                             <button class="btn bg-light">Go</button>
                         </div>
                     </div>
-                    <div class=" p-3 position-absolute translate-middle start-50 top-0 w-25 ">>
-                      <img class="bg-secondary p-3 rounded" src="https://trupner.com/assets/img/logotype-en.svg" style="width:150px" />
+                    <div class=" p-3 position-absolute translate-middle start-50 top-0 w-25 ">
+                        >
+                        <img class="bg-secondary p-3 rounded" src="https://trupner.com/assets/img/logotype-en.svg" style="width:150px" />
                     </div>
                 </div>
                 <div class="col-lg-4 p-5">
