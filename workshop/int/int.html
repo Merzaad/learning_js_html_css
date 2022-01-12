@@ -1,22 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Trupler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://css.gg/chevron-up-r.css' rel='stylesheet'>
     <link href='https://css.gg/push-chevron-left-r.css' rel='stylesheet'>
     <link href='https://css.gg/push-chevron-right-r.css' rel='stylesheet'>
     <link href='https://css.gg/search.css' rel='stylesheet'>
     <link href='https://css.gg/atlasian.css' rel='stylesheet'>
     <style>
-        #social2, #top2, #more2, #slide2_2 {
+        #social2, #top2, #more2, #slide2_2, #footer2 {
             display: none;
         }
         @media screen and (max-width:1000px) {
-            #social, #top, #slide2 {
+            #social, #top, #slide2, #footer {
                 display: none
             }
-            #social2, #top2, #more2, #slide2_2 {
+            #social2, #top2, #more2, #slide2_2, #footer2 {
                 display: inherit;
             }
             #more {
@@ -30,18 +31,18 @@
 </head>
 <body class="text-end" style="font-family:Vazir">
     <div class="container">
-        <!--navbar-->
+     <!--navbar-->
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light border rounded my-5">
+            <nav class="navbar navbar-expand-lg  navbar-light border rounded my-5">
                 <div class="container-fluid d-flex ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-tog">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-tog" aria-controls="nav-tog" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="nav-tog">
                         <form class="d-flex justify-content-center">
                             <button class="btn btn-primary px-5" type="submit">رزرو هتل</button>
+                            <i class="gg-search mx-2 mt-2"></i>
                         </form>
-                        <i class="gg-search mx-3"></i>
                         <ul class="navbar-nav mx-auto mb-2 text-center ">
                             <li class="nav-item mx-3">
                                 <a class="nav-link" href="#">هتل های ایران</a>
@@ -64,9 +65,9 @@
                 </div>
             </nav>
         </div>
-        <!--header-->
+     <!--header-->
         <div class="container">
-            <div class="container rounded border position-relative" style="background-image: url(./img/img1.jpg); height:550px ">
+            <div class="container rounded border position-relative" style="background: url(./img/img1.jpg); height: 550px;">
                 <div id="header" class="container w-75 me-5 text-white position-absolute bottom-0 end-0 ">
                     <span class="h6"> آبان ۱۴۰۰</span><span class="mx-3 h6">خواندن در ۶ دقیقه</span>
                     <h1 class="my-3">زیباترین هتل‌ها برای اقامت در فصل پاییز</h1>
@@ -80,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <!--section1-->
+     <!--section1-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 my-5">
@@ -112,29 +113,31 @@
                 </div>
             </div>
         </div>
-        <!--section2-->
+     <!--section2-->
         <div class="container">
             <div class="row">
                 <div class="col-lg-4" id="social">
                     <div class="container pt-5 m-0" style="background-image: url(./img/img4.png); background-repeat: no-repeat; height: 505px; width: 350px;">
                         <h2>جستجو</h2>
-                        <form class="d-flex shadow my-5">
-                            <button class="btn bg-primary"> <i class="gg-search"></i></button>
-                            <input class="form-control" placeholder="دنبال چه چیزی هستید؟">
+                        <form class="d-flex shadow my-4">
+                            <button  class="btn bg-primary" type="button"> <i class="gg-search"></i></button>
+                            <input class="form-control p-2 text-end" placeholder="دنبال چه چیزی هستید؟">
                         </form>
-                        <h2>مارا دنبال کنید</h2>
-                        <div class="wid">
-                            <div class="container rounded bg-white py-4 my-3">
-
-                            </div>
-                            <div class="container rounded bg-white py-4 my-3">
-
-                            </div>
-                            <div class="container rounded bg-white py-4 my-3">
-
-                            </div>
+                        <div class="container mt-5 p-0">
+                            <h2>مارا دنبال کنید</h2>
+                            <button class="btn w-100  d-flex justify-content-end rounded my-3 text-white" type="button" style="background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ">
+                                <h6 class="btn text-white">اینستاگرام</h6>
+                                <span><i class="gg-atlasian my-2 "></i></span>
+                            </button>
+                            <button class="btn w-100 bg-light d-flex justify-content-end rounded my-3" type="button">
+                                <h6 class="btn">تلگرام</h6>
+                                <span><i class="gg-atlasian my-2"></i></span>
+                            </button>
+                            <button class="btn w-100 bg-light d-flex justify-content-end rounded my-3" type="button">
+                                <h6 class="btn">توییتر</h6>
+                                <span><i class="gg-atlasian my-2"></i></span>
+                            </button>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-8 ">
@@ -153,7 +156,7 @@
                                         <div class="p-1">
                                             <div class="card-body px-0">
                                                 <img class="card-img mb-2" src="./img/img3.png" />
-                                                <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                                                <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                                                 <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                                                 <a class="btn border-primary">ادامه مطلب</a>
                                             </div>
@@ -163,7 +166,7 @@
                                         <div class="p-1">
                                             <div class="card-body px-0">
                                                 <img class="card-img mb-2" src="./img/img2.png" />
-                                                <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                                                <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                                                 <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                                                 <a class="btn border-primary">ادامه مطلب</a>
                                             </div>
@@ -177,7 +180,7 @@
                                         <div class="p-1">
                                             <div class="card-body px-0">
                                                 <img class="card-img mb-2" src="./img/img5.png" />
-                                                <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                                                <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                                                 <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                                                 <a class="btn border-primary">ادامه مطلب</a>
                                             </div>
@@ -187,7 +190,7 @@
                                         <div class="p-1">
                                             <div class="card-body px-0">
                                                 <img class="card-img mb-2" src="./img/img8.png" />
-                                                <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                                                <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                                                 <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                                                 <a class="btn border-primary">ادامه مطلب</a>
                                             </div>
@@ -200,11 +203,11 @@
                 </div>
             </div>
         </div>
-        <!--section3-->
+     <!--section3-->
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-12 d-flex justify-content-between ">
-                    <button id="more" class="btn border-primary ">مشاهده همه</button>
+                    <button id="more" class="btn border-primary" type="button">مشاهده همه</button>
                     <h2 class="">دسته بندی شماره 1</h2>
                 </div>
             </div>
@@ -212,7 +215,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img11.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -220,7 +223,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img10.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -228,7 +231,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img9.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -236,17 +239,17 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img5.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
                 </div>
             </div>
             <div id="more2">
-                <button class="btn btn-primary mb-5 w-100"> مشاهده همه</button>
+                <button class="btn btn-primary mb-5 w-100" type="button"> مشاهده همه</button>
             </div>
         </div>
-        <!--section4-->
+     <!--section4-->
         <div class="container ">
             <div class="row" id="slide2">
                 <div class="col-lg-5 mt-3 ">
@@ -272,12 +275,6 @@
                 </div>
             </div>
             <div class="carousel slide" id="slide2_2" data-bs-ride="carousel">
-                <div class="d-flex justify-content-between ">
-                    <div class="d-flex">
-                        <button class="btn p-0 mx-1" type="button" data-bs-target="#slide2_2" data-bs-slide="prev"><i class="gg-push-chevron-left-r"></i></button>
-                        <button class="btn p-0 mx-1" type="button" data-bs-target="#slide2_2" data-bs-slide="next"><i class="gg-push-chevron-right-r"></i></button>
-                    </div>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="container">
@@ -304,9 +301,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center ">
+                    <div class="d-flex ">
+                        <button class="btn p-0 mx-1" type="button" data-bs-target="#slide2_2" data-bs-slide="prev"><i class="gg-push-chevron-left-r"></i></button>
+                        <button class="btn p-0 mx-1" type="button" data-bs-target="#slide2_2" data-bs-slide="next"><i class="gg-push-chevron-right-r"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--section5-->
+     <!--section5-->
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-12 d-flex justify-content-between">
@@ -318,7 +321,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img8.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -326,7 +329,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img6.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -334,7 +337,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img7.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -342,7 +345,7 @@
                 <div class="col-lg-3 p-4">
                     <div class="card-body px-0">
                         <img class="card-img mb-2" src="./img/img5.png" />
-                        <h4 class="card-title">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
+                        <h4 class="card-title my-3">پر طرفدارترین هتل‌های شیراز کدام هستند؟</h4>
                         <p class="card-text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
                         <a class="btn btn-link">ادامه مطلب</a>
                     </div>
@@ -352,41 +355,49 @@
                 <button class="btn btn-primary mb-5 w-100"> مشاهده همه</button>
             </div>
         </div>
-        <!--footer-->
+     <!--footer-->
         <div class="container">
             <div id="social2" class="col-lg-4 my-5">
-                <div class="container pt-5 m-0" style="background-image: url(./img/img4.png); background-repeat: no-repeat; height: 505px; width: 100%;">
+                <div class="container pt-5 m-0" style="background-image: url(./img/img4.png); background-repeat: repeat; height: 505px; width: 100%;">
                     <h2>جستجو</h2>
-                    <form class="d-flex shadow my-5">
-                        <button class="btn bg-primary">Go</button>
-                        <input class="form-control" placeholder="دنبال چه چیزی هستید؟">
+                    <form class="d-flex shadow my-4">
+                        <button class="btn bg-primary"><i class="gg-search"></i></button>
+                        <input class="form-control p-2 text-end" placeholder="دنبال چه چیزی هستید؟">
                     </form>
-                    <h2>مارا دنبال کنید</h2>
-                    <div>
-                        <div class="container rounded bg-white py-4 my-3"></div>
-                        <div class="container rounded bg-white py-4 my-3"></div>
-                        <div class="container rounded bg-white py-4 my-3"></div>
+                    <div class="container mt-5 p-0">
+                        <h2>مارا دنبال کنید</h2>
+                        <button class="btn w-100  d-flex justify-content-end rounded my-3 text-white" style="background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); ">
+                            <h6 class="btn text-white">اینستاگرام</h6>
+                            <span><i class="gg-atlasian my-2 "></i></span>
+                        </button>
+                        <button class="btn w-100 bg-light d-flex justify-content-end rounded my-3">
+                            <h6 class="btn">تلگرام</h6>
+                            <span><i class="gg-atlasian my-2"></i></span>
+                        </button>
+                        <button class="btn w-100 bg-light d-flex justify-content-end rounded my-3">
+                            <h6 class="btn">توییتر</h6>
+                            <span><i class="gg-atlasian my-2"></i></span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="row rounded bg-dark text-white m-0  ">
+            <div class="row rounded bg-dark text-white m-0 " id="footer">
                 <div class="col-lg-4 p-5 position-relative ">
-                    <div class=" mt-4 ms-5 text-start">
+                    <div class=" text-start m-2 ">
                         <p>026 33143</p>
                         <p>info@trupner.com</p>
-                        <div class="d-felx">
+                        <div class="d-flex">
                             <button class="btn text-white"><i class="gg-atlasian"></i></button>
                             <button class="btn text-white"><i class="gg-atlasian"></i></button>
                             <button class="btn text-white"><i class="gg-atlasian"></i></button>
                         </div>
                     </div>
                     <div class=" p-3 position-absolute translate-middle start-50 top-0 w-50 d-flex justify-content-center">
-                        <a id="top2" class="text-dark m-4" href="#"><i class="gg-chevron-up-r bg-light"></i></a>
                         <img class="bg-secondary p-3 rounded" src="https://trupner.com/assets/img/logotype-en.svg" style="width:150px" />
                     </div>
                 </div>
-                <div class="col-lg-4 p-5">
-                    <div class="row py-4">
+                <div class="col-lg-4 p-5 ">
+                    <div class="row">
                         <h6>مقصد های محبوب</h6>
                     </div>
                     <div class="row">
@@ -403,14 +414,60 @@
                     </div>
                 </div>
                 <div class="col-lg-4 p-5 ">
-                    <div class="row py-4">
-                        <h6>مقصد های محبوب</h6>
+                    <div class="row">
+                        <h6>دسترسی سریع</h6>
                     </div>
                     <div class="row">
-                        <div class="col-lg-12 text-end">
+                        <div class="col-lg-12">
+                            <a class="text-decoration-none text-white " href="#">جستجو و رزرو هتل</a><br />
+                            <a class="text-decoration-none text-white" href="#">درباره تراپنر</a><br />
+                            <a class="text-decoration-none text-white" href="#">تماس با ما</a><br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row rounded bg-dark text-white m-0" id="footer2">
+                <div class="col-lg-4 p-5 position-relative d-flex justify-content-between ">
+                    <div class=" text-start mt-3">
+                        <p>026 33143</p>
+                        <p>info@trupner.com</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <button class="btn text-white"><i class="gg-atlasian"></i></button>
+                        <button class="btn text-white"><i class="gg-atlasian"></i></button>
+                        <button class="btn text-white"><i class="gg-atlasian"></i></button>
+                    </div>
+                    <div class=" p-3 position-absolute translate-middle start-50 top-0 w-50 d-flex justify-content-center">
+                        <img class="bg-secondary p-3 rounded" src="https://trupner.com/assets/img/logotype-en.svg" style="width:150px" />
+                        <a id="top2" class="text-dark m-4" href="#"><i class="gg-chevron-up-r bg-light"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5">
+                    <div class="row text-center">
+                        <h6>مقصد های محبوب</h6>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="col-lg-6">
+                            <a class="text-decoration-none text-white" href="#">هتل های مشهد</a><br />
+                            <a class="text-decoration-none text-white" href="#">هتل های شیراز</a><br />
+                            <a class="text-decoration-none text-white" href="#">هتل های اصفهان</a><br />
+                        </div>
+                        <div class="col-lg-6">
                             <a class="text-decoration-none text-white " href="#">هتل های مشهد</a><br />
                             <a class="text-decoration-none text-white" href="#">هتل های شیراز</a><br />
                             <a class="text-decoration-none text-white" href="#">هتل های اصفهان</a><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-5 ">
+                    <div class="row text-center">
+                        <h6>دسترسی سریع</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex justify-content-between">
+                            <a class="text-decoration-none text-white mx-1" href="#">تماس با ما</a><br />
+                            <a class="text-decoration-none text-white mx-1" href="#">درباره تراپنر</a><br />
+                            <a class="text-decoration-none text-white mx-1" href="#">رزرو هتل</a><br />
                         </div>
                     </div>
                 </div>
@@ -422,7 +479,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 </body>
