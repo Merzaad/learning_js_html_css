@@ -2,33 +2,46 @@
     box-sizing: border-box;
 }
 body {
-
     background-color: black;
 }
+.form {
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    height: 500px;
 
-.header {
-    position: relative;
-    height:100px;
+
+}
+.test {
+    width: 70%;
+    margin:auto;
+    background-color: white;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.planet{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
     width:80%;
     margin:auto;
-    margin-top:100px;
+    z-index:-1;
+    gap:50px;
+    
 }
-    .header h6 {
-        background-color:white;
-        text-align: center;
-        font-family: Calibri;
-        font-size: 100px;
-        color: orangered;
-        margin: auto;
-        border-radius:20px;
+.planet img{
+    width:100px;
+}
 
+
+@media screen and (max-width:1000px) {
+    .test{
+        width:100%
+    }
+    .planet img {
+        width: 50px;
     }
 
-
-@media screen and (max-width:900px) {
-
 }
 
-@media screen and (max-width:420px) {
-
-}
