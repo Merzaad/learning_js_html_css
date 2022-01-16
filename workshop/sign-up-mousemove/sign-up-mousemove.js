@@ -1,5 +1,4 @@
-document.addEventListener('mousemove', x);
-function x(e) {
+function mouseover(e) {
     document.querySelectorAll('.planet').forEach((i) => {
         var mv = i.getAttribute("data-value");
         var x = (e.clientX * mv) / 100;
@@ -7,9 +6,33 @@ function x(e) {
         i.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 };
+
+document.addEventListener('mousemove', mouseover);
+
 let a = document.querySelectorAll('.planet');
-let b = 50;
+
 for (let i in a) {
-    a[i].style.marginTop = `${b}px`;
-    b *= Math.random() * 2;
+    if (i % 2 == 0) {
+        a[i].style = `
+        position:absolute;
+        right: ${Math.random() * 100}%;
+        top:   ${Math.random() * 300}%;
+        z-index: -1;
+        overflow:hidden;
+        width:50px;
+        `;
+    }
+    else {
+        a[i].style = `
+        position:absolute;
+        right: ${Math.random() * 100}%;
+        bottom: ${Math.random() * 100}%;
+        z-index: -1;
+        overflow:hidden;
+        width:50px;
+        `;
+    }
 };
+
+
+document.addEventListener('mousemove', mouseover);
