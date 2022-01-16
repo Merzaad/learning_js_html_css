@@ -20,10 +20,12 @@ function NaNValidation() {
         };
     };
     if (checkletter(x) && checkletter(y)) {
-      alert(`Name: ${x} and Lastname: ${y} are validated`)
+        alert(`Name: ${x} and Lastname: ${y} are validated`);
+        return true;
     }
     else {
         alert("only letters are allowed");
+        return false;
     };
 };
 document.addEventListener('mousemove', mousemove);

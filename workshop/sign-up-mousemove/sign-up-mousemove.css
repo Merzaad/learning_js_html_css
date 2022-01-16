@@ -12,19 +12,20 @@ body {
     margin: auto;
     height: 200px;
 }
-.planet{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    width:80%;
-    margin:auto;
-    gap:50px;
-    position:relative;
-    
+.planet {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    gap: 50px;
+    -webkit-animation: flip 0.4s both;
+    animation: flip 0.4s both;
+    z-index: -1;
 }
     .planet img {
         width: 100px;
-        z-index: -1;
     }
 
 .container {
@@ -34,8 +35,8 @@ body {
     color: black;
     padding: 20px;
     background-color: white;
-    -webkit-animation: puff-in-center 1s  both;
-    animation: puff-in-center 1s  both;
+    -webkit-animation: puff-in 1s both;
+    animation: puff-in 1s both;
 }
 
 .form {
@@ -65,7 +66,7 @@ body {
         color:white;
     }
 
-@-webkit-keyframes puff-in-center {
+@-webkit-keyframes puff-in {
     0% {
         -webkit-transform: scale(2);
         -webkit-filter: blur(4px);
@@ -78,7 +79,7 @@ body {
     }
 }
 
-@keyframes puff-in-center {
+@keyframes puff-in {
     0% {
         transform: scale(2);
         filter: blur(4px);
@@ -92,18 +93,44 @@ body {
     }
 }
 
-@media screen and (max-width:1000px) {
-        .planet img {
-        width: 50px;
-        position:static;
+
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: rotateX(0);
     }
-        .container{
-            width:100%;
-            padding:10px;
-        }
-        .form {
-            width: 100%;
-            padding: 20px;
-        }
+    100% {
+        -webkit-transform: rotateX(360deg);
+    }
+}
+@keyframes flip {
+    0% {
+        transform: rotateX(0);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
 }
 
+@media screen and (max-width:1000px) {
+    .planet img {
+        width: 50px;
+        position: static;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        margin-top: 50px;
+    }
+
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+    .planet img{
+        width:20px; 
+    }
+    .header{
+        height:50px;
+    }
+}
