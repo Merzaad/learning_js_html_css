@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100vh
+  
+}
+.univers {
+    margin:auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 100px;
+    flex-wrap: wrap
+}
+.planet{
+    height:100px;
+}
+
+.sign-up {
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.su-img {
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.su-form {
+    width: 60%;
+    background-color: aquamarine;
+    display: flex;
+    border-radius: 10px;
+}
+
+    .su-form form {
+        padding: 5px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .su-form input {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        margin: 2px;
+    }
+
+    .su-form button {
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 5px;
+        padding: 10px;
+        transition: 1s
+    }
+
+        .su-form button:hover {
+            color: black;
+            background-color: crimson;
+        }
+
+@media screen and (max-width:900px) {
+    .sign-up {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .su-img {
+        width: 100%
+    }
+
+    .su-form {
+        width: 100%
+    }
+}
+
+@media screen and (max-width:420px) {
+    .sign-up {
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+

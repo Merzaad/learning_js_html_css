@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./sign-up-mousemove.css" />
+    <meta name="viewport" content="width=device-widh initial-scale = 1.0" />
+    <title>mousemove</title>
+</head>
+<body>
+    <div class="sign-up">
+        <div class="su-img"></div>
+        <div class="su-form">
+            <form>
+                <input id="name" type="text" placeholder="Name" />
+                <input id="email" type="email" placeholder="Email" />
+                <button type="button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="univers">
+        <img class="planet" src="./img/img1.png" data-value="1" alt="" />
+        <img class="planet" src="./img/img2.png" data-value="1" alt="" />
+        <img class="planet" src="./img/img3.png" data-value="2" alt="" />
+        <img class="planet" src="./img/img4.png" data-value="-1" alt="" />
+        <img class="planet" src="./img/img5.png" data-value="-1" alt="" />
+        <img class="planet" src="./img/img6.png" data-value="-3" alt="" />
+        <img class="planet" src="./img/img7.png" data-value="4"  alt="" />
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('mousemove', x);
+        function x(e) {
+            document.querySelectorAll('.planet').forEach((i) => {
+                var mv = i.getAttribute("data-value");
+                var x = (e.clientX * mv) / 100;
+                var y = (e.clientY * mv) / 100;
+                i.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        };
+        let a = document.querySelectorAll('.planet');
+        let b = 50;
+        for (let i in a) {
+            a[i].style.marginTop = `${b}px`;
+            b *= Math.random() * 2;
+        };
+
+
+    </script>
+</body>
+</html>
