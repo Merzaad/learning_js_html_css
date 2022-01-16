@@ -1,23 +1,30 @@
-let move = document.querySelectorAll('.move')
-
-
-
+const move = document.querySelectorAll('.move')
 function mousemove(e) {
     move.forEach((i) => {
-        var mv = i.getAttribute("data-value");
-        var x = (e.clientX * mv) / 400;
-        var y = (e.clientY * mv) / 50;
+        const mv = i.getAttribute("data-value");
+        const x = (e.clientX * mv) / 400;
+        const y = (e.clientY * mv) / 50;
         i.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 };
-
-function validation() {
-    let x = document.forms['signup']['name'].value;
-    let y = `Validated`;
-    alert(y);
-    return true
+function NaNValidation() {
+    const x = document.forms['signup'][`name`].value;
+    const y = document.forms['signup'][`lastname`].value;
+    const letters = /^[A-Za-z]+$/;
+    function checkletter(a) {
+        if (a.match(letters)) {
+            return true;
+        }
+        else {
+            return false;
+        };
+    };
+    if (checkletter(x) && checkletter(y)) {
+      alert(`Name: ${x} and Lastname: ${y} are validated`)
+    }
+    else {
+        alert("only letters are allowed");
+    };
 };
-
-
 document.addEventListener('mousemove', mousemove);
 

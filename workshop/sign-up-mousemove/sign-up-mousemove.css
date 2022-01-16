@@ -34,8 +34,8 @@ body {
     color: black;
     padding: 20px;
     background-color: white;
-    -webkit-animation: puff-in-center 1s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
-    animation: puff-in-center 1s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+    -webkit-animation: puff-in-center 1s  both;
+    animation: puff-in-center 1s  both;
 }
 
 .form {
@@ -58,6 +58,7 @@ body {
     border-radius:5px;
     margin-top:20px;
     padding:10px;
+    transition:0.2s;
 }
     .form-submit:hover{
         background-color:blueviolet;

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="./sign-up-mousemove.css" />
     <meta name="viewport" content="width=device-width initial-scale = 1.0" />
     <title>mousemove</title>
-</head>s
+</head>
 <body>
     <div class="header">
         <div class="planet">
@@ -19,11 +19,11 @@
     </div>
     <div class="move" data-value="2">
         <div class="container">
-            <form class="form" name="signup" onsubmit="validation()" method="post" autocomplete="on">
+            <form class="form" name="signup" onsubmit="NaNValidation()" method="post" autocomplete="off" >
                 <label class="form-label" for="name">Name</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Name" />
+                <input class="form-input" type="text" id="name" name="name" placeholder="Name" required />
                 <label class="form-label" for="lastname">Lastname</label>
-                <input class="form-input" type="text" id="lastname" name="lastname" placeholder="Lastname" />
+                <input class="form-input" type="text" id="lastname" name="lastname" placeholder="Lastname" required/>
                 <label class="form-label" for="email">Email</label>
                 <input class="form-input" type="email" id="email" name="email" placeholder="Email" />
                 <input class="form-submit" type="submit" value="Submit" />
