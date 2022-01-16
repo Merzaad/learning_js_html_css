@@ -6,22 +6,28 @@
     <title>mousemove</title>
 </head>s
 <body>
-    <div class="form">
+    <div class="header">
         <div class="planet">
-            <img class="move" src="./img/img1.png" data-value="5" alt="" />
-            <img class="move" src="./img/img2.png" data-value="10" alt="" />
-            <img class="move" src="./img/img3.png" data-value="3" alt="" />
-            <img class="move" src="./img/img5.png" data-value="12" alt="" />
-            <img class="move" src="./img/img4.png" data-value="12" alt="" />
-            <img class="move" src="./img/img6.png" data-value="6" alt="" />
-            <img class="move" src="./img/img7.png" data-value="7" alt="" />
+            <img class="move" src="./img/img1.png" data-value="8" alt="" />
+            <img class="move" src="./img/img2.png" data-value="16" alt="" />
+            <img class="move" src="./img/img3.png" data-value="32" alt="" />
+            <img class="move" src="./img/img5.png" data-value="16" alt="" />
+            <img class="move" src="./img/img4.png" data-value="8" alt="" />
+            <img class="move" src="./img/img6.png" data-value="16" alt="" />
+            <img class="move" src="./img/img7.png" data-value="16" alt="" />
         </div>
-        <div class="test">
-
-        </div>
-
     </div>
-
+    <div class="container">
+        <form class="form" name="signup" onsubmit="validation()" method="post" autocomplete="on" >
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name"  name="name" placeholder="Name" />
+            <label class="form-label" for="lastname" >Lastname</label>
+            <input class="form-input" type="text" id="lastname" name="lastname"  placeholder="Lastname" />
+            <label class="form-label" for="email" >Email</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="Email" />
+            <input class="form-submit" type="submit" value="Submit"  />
+        </form>
+    </div>
     <script src="sign-up-mousemove.js" type="text/javascript"></script>
 </body>
 </html>

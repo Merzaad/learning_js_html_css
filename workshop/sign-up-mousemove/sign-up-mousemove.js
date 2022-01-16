@@ -1,4 +1,4 @@
-function mouseover(e) {
+function mousemove(e) {
     document.querySelectorAll('.move').forEach((i) => {
         var mv = i.getAttribute("data-value");
         var x = (e.clientX * mv) / 200;
@@ -6,4 +6,10 @@ function mouseover(e) {
         i.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 };
-document.addEventListener('mousemove', mouseover);
+function validation() {
+    let x = document.forms['signup']['name'].value;
+    let y = `Your name: ${x}`
+    alert(y)
+
+}
+document.addEventListener('mousemove', mousemove);
