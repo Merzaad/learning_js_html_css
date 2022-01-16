@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family:Calibri;
 }
+
 body {
     background-color: black;
 }
@@ -17,8 +18,8 @@ body {
     flex-wrap:wrap;
     width:80%;
     margin:auto;
- 
     gap:50px;
+    position:relative;
     
 }
     .planet img {
@@ -90,11 +91,18 @@ body {
     }
 }
 
-
 @media screen and (max-width:1000px) {
         .planet img {
         width: 50px;
+        position:static;
     }
-
+        .container{
+            width:100%;
+            padding:10px;
+        }
+        .form {
+            width: 100%;
+            padding: 20px;
+        }
 }
 
