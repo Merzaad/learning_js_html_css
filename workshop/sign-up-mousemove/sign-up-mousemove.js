@@ -1,12 +1,15 @@
-const move = document.querySelectorAll('.move')
+// mousemove
 function mousemove(e) {
+    const move = document.querySelectorAll('.move')
     move.forEach((i) => {
         const mv = i.getAttribute("data-value");
-        const x = (e.clientX * mv) / 500;
-        const y = (e.clientY * mv) / 50;
+        const x = (e.clientX * mv) / 100;
+        const y = (e.clientY * mv) / 100;
         i.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 };
+document.addEventListener('mousemove', mousemove);
+// validation
 function Validation() {
     const x = document.forms['signup'][`name`].value;
     const y = document.forms['signup'][`lastname`].value;
@@ -30,5 +33,3 @@ function Validation() {
         return false;
     };
 };
-document.addEventListener('mousemove', mousemove);
-

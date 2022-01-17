@@ -7,48 +7,42 @@ body {
     padding:0px;
 }
 .header {
-    border-radius: 20px;
-    width: 100%;
-    margin: auto;
+    height:100px;
 }
-.planet {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 20px auto auto auto;
-    gap: 50px;
-    -webkit-animation: flip 0.3s;
-    animation: flip 0.3s ;
-    z-index: -1;
-}
-    .planet img {
-        width: 100px;
-    }
 .container {
-    width: 60%;
+    width: 65%;
     margin: auto;
     border-radius: 10px;
     color: black;
     padding: 20px;
-    background-color: white;
     -webkit-animation: puff-in 1s both;
     animation: puff-in 1s both;
 }
-.row{
-    display:flex;
-    flex-direction:row;
-    gap:10px;   
+.border {
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(243,0,255);
+    background: linear-gradient(90deg, rgba(243,0,255,0.28084737312893904) 0%, rgba(255,35,206,0.3900910706079307) 100%);
+    box-shadow:0px 0px 4px violet;
+}
+.row {
+    box-shadow: 0px 0px 10px black;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
 .col {
     width: 50%;
-    display: flex;
+    display: flex;  
 }
 .form {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding:20px;
   
 }
 .label {
@@ -121,10 +115,16 @@ body {
 .logo img{
     border-radius:10px;
 }
-.footer{
-    height:50px;
+.footer {
+    text-align: center;
+    color: darkmagenta;
+    animation: puff-in 0.1s;
+    opacity: 0.7;
+    height:100px
 }
-
+    .footer p {
+        font-size: 20px;
+    }
 @-webkit-keyframes puff-in {
     0% {
         -webkit-transform: scale(2);
@@ -150,33 +150,18 @@ body {
         opacity: 1;
     }
 }
-@-webkit-keyframes flip {
-    0% {
-        -webkit-transform: rotateX(0);
-    }
-    100% {
-        -webkit-transform: rotateX(360deg);
-    }
-}
-@keyframes flip {
-    0% {
-        transform: rotateX(0);
-    }
-    100% {
-        transform: rotateX(360deg);
-    }
-}
+
 @media screen and (max-width:1000px) {
+    *{
+        font-size:20px;
+    }
     .container {
         width: 100%;
-        padding: 10px;
-        margin-top: 50px;
+        margin:0;
+        padding:0;
     }
     .form {
         padding: 20px;
-    }
-    .planet img{
-        width:80px; 
     }
     .header{
         height:50px;
