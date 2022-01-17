@@ -2,9 +2,9 @@
     box-sizing: border-box;
     font-family:Calibri;
 }
-
 body {
     background-color: black;
+    padding:0px;
 }
 .header {
     border-radius: 20px;
@@ -17,8 +17,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto auto auto;
     gap: 50px;
     -webkit-animation: flip 0.4s both;
     animation: flip 0.4s both;
@@ -27,9 +26,8 @@ body {
     .planet img {
         width: 100px;
     }
-
 .container {
-    width: 40%;
+    width: 60%;
     margin: auto;
     border-radius: 10px;
     color: black;
@@ -38,33 +36,68 @@ body {
     -webkit-animation: puff-in 1s both;
     animation: puff-in 1s both;
 }
-
+.row{
+    display:flex;
+    flex-direction:row;
+}
+.col {
+    width:50%
+}
 .form {
     display: flex;
     flex-direction: column;
-    width: 50%;
     margin: auto;
 }
-.form-label {
-    margin: 5px;
- 
+.label {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.form-input {
+.input {
     padding: 5px;
     border-radius: 5px;
     border-color: blueviolet;
 }
-.form-submit{
+.submit{
     border:none;
     border-radius:5px;
     margin-top:20px;
     padding:10px;
     transition:0.2s;
 }
-    .form-submit:hover{
+    .submit:hover{
         background-color:blueviolet;
         color:white;
     }
+.ready {
+    margin: 20px auto auto auto;
+    width:100%;
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.test {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    display: inline-block;
+    border:solid
+}
+.radio {
+    display: none
+}
+    .radio:checked ~ .test {
+        background-color: blueviolet;
+    }
+.radio:hover ~ .test {
+    background-color: blueviolet;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 @-webkit-keyframes puff-in {
     0% {
@@ -78,7 +111,6 @@ body {
         opacity: 1;
     }
 }
-
 @keyframes puff-in {
     0% {
         transform: scale(2);
@@ -92,8 +124,6 @@ body {
         opacity: 1;
     }
 }
-
-
 @-webkit-keyframes flip {
     0% {
         -webkit-transform: rotateX(0);
@@ -110,21 +140,13 @@ body {
         transform: rotateX(360deg);
     }
 }
-
 @media screen and (max-width:1000px) {
-    .planet img {
-        width: 50px;
-        position: static;
-    }
-
     .container {
         width: 100%;
         padding: 10px;
         margin-top: 50px;
     }
-
     .form {
-        width: 100%;
         padding: 20px;
     }
     .planet img{
@@ -132,5 +154,11 @@ body {
     }
     .header{
         height:50px;
+    }
+    .row{
+        flex-direction:column;
+    }
+    .col{
+        width:100%;
     }
 }

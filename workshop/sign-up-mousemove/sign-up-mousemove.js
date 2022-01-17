@@ -10,6 +10,7 @@ function mousemove(e) {
 function NaNValidation() {
     const x = document.forms['signup'][`name`].value;
     const y = document.forms['signup'][`lastname`].value;
+    const z = document.forms['signup'][`ready`].value;
     const letters = /^[A-Za-z]+$/;
     function checkletter(a) {
         if (a.match(letters)) {
@@ -20,7 +21,7 @@ function NaNValidation() {
         };
     };
     if (checkletter(x) && checkletter(y)) {
-        alert(`Name: ${x} and Lastname: ${y} are validated`);
+        alert(`Name: ${x} and Lastname: ${y} are validated and ready value: ${z}`);
         return true;
     }
     else {
