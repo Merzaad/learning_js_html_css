@@ -57,12 +57,18 @@ body {
     cursor: pointer;
 }
 .input {
+    outline: none;
+    border: solid 1px;
     padding: 5px;
     border-radius: 5px;
     border-color: blueviolet;
-    
 }
+    .input:focus {
+        border-color: violet;
+    }
 .submit {
+    color: white;
+    background-color: blueviolet;
     border: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -70,9 +76,8 @@ body {
     transition: 0.2s;
     cursor: pointer;
 }
-    .submit:hover{
-        background-color:blueviolet;
-        color:white;
+    .submit:hover {
+        background-color: violet;
     }
 .ready {
     margin: 20px auto auto auto;
@@ -82,24 +87,39 @@ body {
     justify-content:center;
 }
 
-.test {
+.cradio {
     width: 10px;
     height: 10px;
     background-color: white;
     display: inline-block;
-    border: solid 1px
+    border: solid 0.3px
 }
+
 .radio {
     display: none;
 }
-    .radio:checked ~ .test {
+    .radio:checked ~ .cradio {
         background-color: blueviolet;
     }
+.select {
+    outline:none;
+    width: 100%;
+    justify-content: start;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+.select:focus {
+    border-color: violet;
+}
 .logo {
     width: 100%;
     display: flex;
     flex-direction: column;
     padding: 30px;
+}
+.logo img{
+    border-radius:10px;
 }
 .footer{
     height:50px;
