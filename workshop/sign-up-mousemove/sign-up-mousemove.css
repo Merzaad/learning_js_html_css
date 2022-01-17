@@ -10,17 +10,16 @@ body {
     border-radius: 20px;
     width: 100%;
     margin: auto;
-    height: 200px;
 }
 .planet {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
     margin: 20px auto auto auto;
     gap: 50px;
-    -webkit-animation: flip 0.4s both;
-    animation: flip 0.4s both;
+    -webkit-animation: flip 0.3s;
+    animation: flip 0.3s ;
     z-index: -1;
 }
     .planet img {
@@ -39,30 +38,37 @@ body {
 .row{
     display:flex;
     flex-direction:row;
+    gap:10px;   
 }
 .col {
-    width:50%
+    width: 50%;
+    display: flex;
 }
 .form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
+  
 }
 .label {
     margin-top: 5px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 .input {
     padding: 5px;
     border-radius: 5px;
     border-color: blueviolet;
+    
 }
-.submit{
-    border:none;
-    border-radius:5px;
-    margin-top:20px;
-    padding:10px;
-    transition:0.2s;
+.submit {
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 0.2s;
+    cursor: pointer;
 }
     .submit:hover{
         background-color:blueviolet;
@@ -81,22 +87,22 @@ body {
     height: 10px;
     background-color: white;
     display: inline-block;
-    border:solid
+    border: solid 1px
 }
 .radio {
-    display: none
+    display: none;
 }
     .radio:checked ~ .test {
         background-color: blueviolet;
     }
-.radio:hover ~ .test {
-    background-color: blueviolet;
-}
-
-.result {
+.logo {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    padding: 30px;
+}
+.footer{
+    height:50px;
 }
 
 @-webkit-keyframes puff-in {
@@ -150,7 +156,7 @@ body {
         padding: 20px;
     }
     .planet img{
-        width:20px; 
+        width:80px; 
     }
     .header{
         height:50px;
