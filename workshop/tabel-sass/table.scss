@@ -1,23 +1,44 @@
-$cardShadow:0px 0px 10px black;
+$shadow:0px 0px 1px black;
+$border: 1px solid darkslategray;
 
-table {
+body {
+    background-color: black;
+    font-family: Calibri;
+    box-sizing: border-box;
+
+}
+.container table {
     margin: auto;
     width: 70%;
-    height: 1400px;
     border-collapse: collapse;
+    border-radius: 10px;
+    background-color: white;
+
+
     tr {
         table-layout: fixed;
         text-align: center;
+        height: 75px;
+        border-color: white;
     }
-    th, td {
+
+    td {
         width: 33.33%;
-        border: 1px solid black;
-        background-color: white;
+        box-shadow: $shadow;
+        border: $border;
     }
+
+    th {
+        width: 33.33%;
+        background-color: darkslategray;
+        color: white;
+        border: $border;
+    }
+
     .sticky {
-        box-shadow: $cardShadow;
+        box-shadow: $shadow;
         position: sticky;
-        top: 5px;
+        top: 0px;
     }
 }
 
