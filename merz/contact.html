@@ -28,14 +28,14 @@
     </div>
     <div class="border">
         <div class="block">
-            <form class="form">
-                <label id="name">Name</label><br>
-                <input id="name" type="text" placeholder="your name here" required><br>
-                <label>Last Name</label><br>
-                <input type="text" placeholder="your last name here"><br>
-                <label>Message</label><br>
-                <input type="text" placeholder="your message here"><br>
-                <button type="button" onclick="alert('Done')">Submit</button>
+            <form class="form" name="form">
+                <label for="name">Name</label><br>
+                <input id="name" name="name" type="text" placeholder="your name here" required><br>
+                <label for="lastname">Last Name</label><br>
+                <input id="lastname" name="" type="text" placeholder="your last name here"><br>
+                <label for="msg">Message</label><br>
+                <input id="msg" type="text" placeholder="your message here"><br>
+                <input type="button" onclick="alert('Done')" value="Submit">
             </form>
         </div>
     </div>

@@ -1,0 +1,94 @@
+* {
+    font-family: "Audiowide", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    background-image: url("../img/bg6.jpg");
+    background-repeat: repeat;
+    background-size: 800px;
+    padding: 30px;
+}
+
+.header {
+    text-align: center;
+    color: mediumspringgreen;
+    text-shadow: 0px 0px 6px mediumspringgreen;
+    font-size: 25px;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.nav {
+    display:flex;
+    border-radius: 10px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+.nav li a {
+    display: block;
+    background-color:dimgray;
+    color: ghostwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+           .nav li a:hover {
+                background-color: mediumspringgreen;
+                color: dimgray;
+            }
+
+#active {
+    display: Block;
+    background-color: mediumspringgreen;
+    color: dimgray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.movingtext {
+    text-shadow: 0px 0px 7px mediumspringgreen;
+    color: mediumspringgreen;
+    margin-top: 40px;
+    letter-spacing: 5px;
+}
+
+
+.footer {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
+}
+
+    .footer a {
+        text-decoration: none;
+        color: black
+    }
+
+
+@media screen and (max-width: 420px) {
+    body{
+        padding:0px;
+    }
+
+    .nav {
+        display:block;
+    }
+
+    .movingtext {
+        font-size: 12px
+
+    }
+}
