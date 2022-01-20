@@ -51,6 +51,7 @@ body {
     cursor: pointer;
 }
 .input {
+    width:100%;
     outline: none;
     border: solid 1px;
     padding: 5px;
@@ -125,6 +126,7 @@ body {
     .footer p {
         font-size: 20px;
     }
+
 @-webkit-keyframes puff-in {
     0% {
         -webkit-transform: scale(2);

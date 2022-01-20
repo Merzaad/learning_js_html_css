@@ -5,7 +5,7 @@ function mousemove(e) {
         const mv = i.getAttribute("data-value");
         const x = (e.clientX * mv) / 100;
         const y = (e.clientY * mv) / 100;
-        i.style.transform = `translateX(${x}px) translateY(${y}px)`
+        i.style.transform = `translateX(${x}px) translateY(${y}px)`;
     })
 };
 // validation
@@ -16,29 +16,30 @@ function Validation(event) {
     const code = document.forms['signup'][`code`];
     const letters = /^[A-Za-z]+$/;
     function isChar(...a) {
-        let is = false
-        a.forEach((i) => i.style = `border-color:darkgreen`)
+        let x = [false,'']
+        a.forEach((i) => i.style = `border-color:darkgreen`);
         for (let i of a) {
             if (i.value.match(letters)) {
-                is = true;
+                x[0] = true;
             }
             else {
-                i.style = `border-color:darkred`;
-                is = false;
+                x[0] = false;
+                x[1] = i.getAttributeNode('name').value;
+                i.style = "border-color:darkred"
                 break;
             };
         }
-        return is;
+        return x
     };
-    if (isChar(name, lastname)) {
+    if (isChar(name, lastname)[0]) {
         alert(`Name: ${name.value} , Lastname: ${lastname.value} ,  Ready value: ${ready.value}, Select value: ${code.value}`);
     }
     else {
         event.preventDefault();
-        alert("error")
+        alert(`error in ${isChar(name, lastname)[1]}`);
     }
-  
 };
+
 
 document.addEventListener('mousemove', mousemove);
 document.forms['signup'].addEventListener('submit', Validation);
