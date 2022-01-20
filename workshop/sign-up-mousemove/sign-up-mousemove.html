@@ -14,12 +14,12 @@
             <div class="border">
                 <div class="row">
                     <div class="col">
-                        <form class="form" name="signup" method="post" autocomplete="off">
-                            <label class="label" for="name">Name</label>
+                        <form class="form" name="signup" action="sign-up-mousemove.html" method="post" autocomplete="off">
+                            <label class="label" for="name">Name <span class="error"> </span></label>
                             <input class="input" id="name" type="text" name="name" placeholder="Name" required />
-                            <label class="label" for="lastname">Lastname</label>
+                            <label class="label" for="lastname">Lastname <span class="error"> </span></label>
                             <input class="input" id="lastname" type="text" name="lastname" placeholder="Lastname" required />
-                            <label class="label" for="email">Email</label>
+                            <label class="label" for="email">Email <span class="error"> </span></label>
                             <input class="input" id="email" type="email" name="email" placeholder="Email" />
                             <label class="label">
                                 Code
@@ -34,6 +34,7 @@
                                     Yes
                                     <input class="radio" type="radio" name="ready" value="1" />
                                     <span class="cradio"></span>
+
                                 </label>
                                 <label class="label">
                                     No

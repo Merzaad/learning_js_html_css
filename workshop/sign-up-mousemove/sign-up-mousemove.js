@@ -9,28 +9,37 @@ function mousemove(e) {
     })
 };
 // validation
-function Validation() {
-    const x = document.forms['signup'][`name`].value;
-    const y = document.forms['signup'][`lastname`].value;
-    const z = document.forms['signup'][`ready`].value;
-    const v = document.forms['signup'][`code`].value;
+function Validation(event) {
+    const name = document.forms['signup'][`name`];
+    const lastname = document.forms['signup'][`lastname`];
+    const ready = document.forms['signup'][`ready`];
+    const code = document.forms['signup'][`code`];
     const letters = /^[A-Za-z]+$/;
-    function checkletter(a) {
-        if (a.match(letters)) {
-            return true;
+    function isChar(...a) {
+        let is = false
+        a.forEach((i) => i.style = `border-color:darkgreen`)
+        for (let i of a) {
+            if (i.value.match(letters)) {
+                is = true;
+            }
+            else {
+                i.style = `border-color:darkred`;
+                is = false;
+                break;
+            };
         }
-        else {
-            return false;
-        };
+        return is;
     };
-    if (checkletter(x) && checkletter(y)) {
-        alert(`Name: ${x} , Lastname: ${y} ,  Ready value: ${z}, Select value: ${v}`);
-        return true;
+    if (isChar(name, lastname)) {
+        alert(`Name: ${name.value} , Lastname: ${lastname.value} ,  Ready value: ${ready.value}, Select value: ${code.value}`);
     }
     else {
-        alert("only letters are allowed");
-        return false;
-    };
+        event.preventDefault();
+        alert("error")
+    }
+  
 };
+
 document.addEventListener('mousemove', mousemove);
-document.forms['signup'].addEventListener('submit' , Validation )
+document.forms['signup'].addEventListener('submit', Validation);
+
