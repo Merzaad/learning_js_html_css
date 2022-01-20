@@ -8,7 +8,6 @@ function mousemove(e) {
         i.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
 };
-document.addEventListener('mousemove', mousemove);
 // validation
 function Validation() {
     const x = document.forms['signup'][`name`].value;
@@ -33,3 +32,5 @@ function Validation() {
         return false;
     };
 };
+document.addEventListener('mousemove', mousemove);
+document.forms['signup'].addEventListener('submit' , Validation )
