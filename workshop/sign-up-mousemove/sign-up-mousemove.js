@@ -14,29 +14,27 @@ function Validation(event) {
     const lastname = document.forms['signup'][`lastname`];
     const ready = document.forms['signup'][`ready`];
     const code = document.forms['signup'][`code`];
-    const letters = /^[A-Za-z]+$/;
-    function isChar(...a) {
-        let x = [false,'nothing'] // {is:false , errIn:'nothing'}
-        a.forEach((i) => i.style = `border-color:darkgreen`);
-        for (let i of a) {
-            if (i.value.match(letters)) {
-                x[0] = true;
-            }
-            else {
-                x[0] = false;
-                x[1] = i.getAttribute('name')
-                i.style = "border-color:darkred"
-                break;
-            };
+    const letters = /[A-Za-z]+$/;
+    function isChar(a) {
+        let x = { is: false, errIn: 'nothing' };
+        if (a.value.match(letters)) {
+            x.is = true;
+            a.style = `border-color:darkgreen`
         }
+        else {
+            x.errIn = `must be letters`
+            a.style = "border-color:darkred";
+        };
         return x
     };
-    if (isChar(name, lastname)[0]) {
+    const isCharName = isChar(name);
+    const isCharLastname = isChar(lastname);
+    if (isCharName.is && isCharLastname.is) {
         alert(`Name: ${name.value} , Lastname: ${lastname.value} ,  Ready value: ${ready.value}, Select value: ${code.value}`);
     }
     else {
         event.preventDefault();
-        alert(`error in ${isChar(name, lastname)[1]}`);
+        alert(`name error: ${isCharName.errIn} ----- lastname error: ${isCharLastname.errIn}`);
     }
 };
 document.addEventListener('mousemove', mousemove);
