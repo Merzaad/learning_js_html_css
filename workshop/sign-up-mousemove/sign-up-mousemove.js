@@ -3,8 +3,8 @@ function mousemove(e) {
     const move = document.querySelectorAll('.move')
     move.forEach((i) => {
         const mv = i.getAttribute("data-value");
-        const x = (e.clientX * mv) / 100;
-        const y = (e.clientY * mv) / 100;
+        const x = (e.clientX * mv) / 50;
+        const y = (e.clientY * mv) / 50;
         i.style.transform = `translateX(${x}px) translateY(${y}px)`;
     })
 };
@@ -16,7 +16,7 @@ function Validation(event) {
     const code = document.forms['signup'][`code`];
     const letters = /^[A-Za-z]+$/;
     function isChar(...a) {
-        let x = [false,'']
+        let x = [false,'nothing'] // {is:false , errIn:'nothing'}
         a.forEach((i) => i.style = `border-color:darkgreen`);
         for (let i of a) {
             if (i.value.match(letters)) {
@@ -24,7 +24,7 @@ function Validation(event) {
             }
             else {
                 x[0] = false;
-                x[1] = i.getAttributeNode('name').value;
+                x[1] = i.getAttribute('name')
                 i.style = "border-color:darkred"
                 break;
             };
@@ -39,8 +39,6 @@ function Validation(event) {
         alert(`error in ${isChar(name, lastname)[1]}`);
     }
 };
-
-
 document.addEventListener('mousemove', mousemove);
 document.forms['signup'].addEventListener('submit', Validation);
 
