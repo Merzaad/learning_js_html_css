@@ -15,26 +15,26 @@ function Validation(event) {
     const ready = document.forms['signup'][`ready`];
     const code = document.forms['signup'][`code`];
     const letters = /[A-Za-z]+$/;
-    function isChar(a) {
+    function includesLet(a) {
         let x = { is: false, errIn: 'nothing' };
         if (a.value.match(letters)) {
             x.is = true;
             a.style = `border-color:darkgreen`
         }
         else {
-            x.errIn = `must be letters`
+            x.errIn = `must contain letters`
             a.style = "border-color:darkred";
         };
         return x
     };
-    const isCharName = isChar(name);
-    const isCharLastname = isChar(lastname);
-    if (isCharName.is && isCharLastname.is) {
+    const includesLetName = includesLet(name);
+    const includesLetLastname = includesLet(lastname);
+    if (includesLetName.is && includesLetLastname.is) {
         alert(`Name: ${name.value} , Lastname: ${lastname.value} ,  Ready value: ${ready.value}, Select value: ${code.value}`);
     }
     else {
         event.preventDefault();
-        alert(`name error: ${isCharName.errIn} ----- lastname error: ${isCharLastname.errIn}`);
+        alert(`name error: ${includesLetName.errIn} ----- lastname error: ${includesLetLastname.errIn}`);
     }
 };
 document.addEventListener('mousemove', mousemove);
